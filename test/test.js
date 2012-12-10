@@ -1,11 +1,11 @@
 var Benchmark = require('benchmark');
 var plot = require('..').plot;
 
-var suite = new Benchmark.Suite;
 
 var options = { maxTime: 1 }
 
 // add tests
+var suite = new Benchmark.Suite
 suite.add('RegExp#test', function() {
   /o/.test('Hello World!');
 }, options)
@@ -15,6 +15,7 @@ suite.add('RegExp#test', function() {
 .add('String#match', function() {
   !!'Hello World!'.match(/o/);
 }, options)
+//.setOptions(options)
 // add listeners
 .on('cycle', function(event) {
   console.log(String(event.target));
@@ -22,7 +23,4 @@ suite.add('RegExp#test', function() {
 .on('complete', function() {
   plot(this, { path: 'out.png' });
 })
-// run async
-//.run();
-
-console.log(suite);
+.run();
