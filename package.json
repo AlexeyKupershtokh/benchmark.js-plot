@@ -1,0 +1,29 @@
+{
+  "name": "benchmark.js-plot",
+  "version": "0.1.0",
+  "description": "Render benchmark.js results to a plot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexeyKupershtokh/benchmark.js-plot.git"
+  },
+  "keywords": [
+    "performance",
+    "speed",
+    "benchmark",
+    "canvas",
+    "plot"
+  ],
+  "author": "Alexey Kupershtokh <alexey.kupershtokh@gmail.com>",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "canvas": "~0.13.1"
+  },
+  "devDependencies": {
+    "benchmark": "~1.0.0"
+  }
+}
