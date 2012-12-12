@@ -1,6 +1,6 @@
 {
   "name": "benchmark.js-plot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Render benchmark.js results to a plot",
   "main": "index.js",
   "scripts": {
